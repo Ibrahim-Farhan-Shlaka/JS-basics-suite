@@ -1,0 +1,114 @@
+body {
+    background: radial-gradient(crimson, rgb(63, 6, 17));
+    min-height: 98vh;
+}
+
+#header {
+    background: black;
+    width: 100%;
+    height: 2%;
+    top: 0;
+    position: fixed;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin-left: -1%;
+}
+
+#footer {
+    background: black;
+    width: 100%;
+    height: 2%;
+    bottom: 0;
+    position: fixed;
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin-left: -1%;
+}
+
+#calc {
+    border: black 3px solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 9%;
+    padding: 2%;
+}
+
+#screen {
+    padding: 5%;
+    border: black 2px solid;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+p {
+    padding-right: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+#numbers {
+    margin-top: 1%;
+    border: black 2px solid;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+#signs {
+    margin-top: 1%;
+    border: black 2px solid;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+button {
+    border: black 2px solid;
+    border-radius: 15px;
+    border: 1;
+    margin: 2%;
+    padding: 2%;
+    font-family: Courier bold, monospace;
+    font-size: 20px;
+    background-color: crimson;
+    
+}
+
+button:hover{
+    background-color: white;
+    font-size: 23px;
+    font-weight: 900;
+    transition: 0.33s;
+}
+
+button:active{
+    background-color: blue;
+    transition: 0.1s;
+}
+
+#execute{
+    background-color: rgb(76, 76, 247);
+    width:100%;
+}
+
+#execute:hover{
+    background-color: white;
+    font-size: 23px;
+    font-weight: 900;
+    transition: 0.33s;
+}
+
+#execute:active{
+    background-color: blue;
+    transition: 0.1s;
+}

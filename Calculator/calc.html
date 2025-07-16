@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+
+    <div id="header">IBO suite</div>
+
+    <div id="calc">
+        <div id="screen">
+            <p id="screenX">[ X ]</p>
+            <p id="screenOperator"> + </p>
+            <p id="screenY">[ Y ]</p>
+            <p> = </p>
+            <p id="screenResult"> result </p>
+        </div>
+        <div id="numbers">
+            <button type="button" onclick=' setNumbers(1); setScreen();'> 1 </button>
+            <button type="button" onclick=' setNumbers(2); setScreen();'> 2 </button>
+            <button type="button" onclick=' setNumbers(3); setScreen();'> 3 </button>
+            <button type="button" onclick=' setNumbers(4); setScreen();'> 4 </button>
+            <button type="button" onclick=' setNumbers(5); setScreen();'> 5 </button>
+            <button type="button" onclick=' setNumbers(6); setScreen();'> 6 </button>
+            <button type="button" onclick=' setNumbers(7); setScreen();'> 7 </button>
+            <button type="button" onclick=' setNumbers(8); setScreen();'> 8 </button>
+            <button type="button" onclick=' setNumbers(9); setScreen();'> 9 </button>
+            <button type="button" onclick=' setNumbers(0); setScreen();'> 0 </button>
+            </div>
+        <div id="signs">
+            <button type="button" onclick="Clear();"> Clear </button>
+            <button type="button" onclick="setOperator(0);"> + </button>
+            <button type="button" onclick="setOperator(1);"> - </button>
+            <button type="button" onclick="setOperator(2);"> * </button>
+            <button type="button" onclick="setOperator(3);"> / </button>
+            <button type="button" onclick="setOperator(4);"> exp </button>
+            <button type="button" onclick="setOperator(5);"> to C </button>
+            <button type="button" onclick="setOperator(6);"> to F </button>
+            
+        </div>
+        <button id="execute" type="button" onclick="execute();"> = </button>
+    </div>
+
+    <div id="footer">IBO suite</div>
+
+    <script src="calc.js"></script>    
+</body>
+
+</html>
