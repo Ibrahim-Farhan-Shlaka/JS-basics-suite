@@ -1,9 +1,11 @@
+//Variables
 let x, y, operator;
-x = 0;
-y = 0;
-operator = 0;
-secondNumber = false;
+x = 0; //first number
+y = 0; //second number
+operator = 0; //for setting the correct operator (sum, difference, division, etc.)
+secondNumber = false; //for checking if the user is now inputting the second number or not
 
+//function to set the operator to execute later in the execute() function, and letting the user set the second number
 function setOperator(num){ 
     operator = num;
     secondNumber = true;  
@@ -38,6 +40,7 @@ function setOperator(num){
     }  
 }
 
+//function to execute the math processes and display the result on screen
 function execute(){
     switch(operator){
         case 0:
@@ -67,6 +70,7 @@ function execute(){
     }
 }
 
+//displays numbers on the screen
 function setScreen(){
     document.getElementById("screenX").innerText = x;
     document.getElementById("screenY").innerText = y;
@@ -119,6 +123,7 @@ function toFahrenheit(){
     return result;
 }
 
+//function to set the numbers x and y, multiplied by 10 and input number added each time so the user can add more than just from 0 to 9
 function setNumbers(num){
     if(secondNumber){
         y = (y*10) + num;
@@ -127,6 +132,7 @@ function setNumbers(num){
     }
 }
 
+//function to clear all numbers and the screen
 function Clear(){
     x = 0;
     y = 0;
